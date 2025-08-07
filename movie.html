@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <center>
+        <h1><i>MOVIE REGISTRATION FORM</i></h1>
+    </center>
+    <form>
+        <div style = "border: 2px solid black;">
+            <font size = "5.6"><font> </font>
+
+            <label for="movieName"><b>Movie Name:</b></label>
+            <input type="text" id="movieName" name="movieName" placeholder="Type movie name"><br><br>
+
+            <label for="adminPassword"><b>Admin Password:</b></label>
+            <input type="password" id="adminPassword" name="adminPassword"><br><br>
+
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email"><br><br>
+
+
+            <label for="watchDate"><b>Watched On:</b></label>
+            <input type="date" id="watchDate" name="watchDate"><br><br>
+
+
+            <label><b>Genres:</b></label><br>
+            <input type="checkbox" id="genre1" name="genre" value="Action">
+            <label for="genre1">Action</label>
+
+            <input type="checkbox" id="genre2" name="genre" value="Drama">
+            <label for="genre2">Drama</label>
+
+            <input type="checkbox" id="genre3" name="genre" value="Comedy">
+            <label for="genre3">Comedy</label>
+
+            <input type="checkbox" id="genre4" name="genre" value="Romance">
+            <label for="genre4">Romance</label><br><br>
+
+
+            <label><b>Language:</b></label><br>
+            <input type="radio" id="lang1" name="language" value="Tamil">
+            <label for="lang1">Tamil</label>
+
+            <input type="radio" id="lang2" name="language" value="Hindi">
+            <label for="lang2">Hindi</label>
+
+            <input type="radio" id="lang3" name="language" value="English">
+            <label for="lang3">English</label>
+
+            <input type="radio" id="lang3" name="language" value="Telugu">
+            <label for="lang3">Telugu</label><br><br>
+
+
+            <label for="payment"><b>Payment Method:</b></label>
+            <select id="payment" name="payment">
+                <option value="">--Select Payment Method--</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="UPI">UPI</option>
+                <option value="Net Banking">Net Banking</option>
+                <option value="Cash">Cash</option>
+            </select><br><br>
+
+
+
+            <label for="poster"><b>Upload Poster:</b></label>
+            <input type="file" id="poster" name="poster"><br><br>
+
+
+            <label for="dummyButton"><b>Click for movie details:</b></label>
+            <input type="button" id="dummyButton" value="Click"><br><br>
+
+
+            <label for="submitImage"><b>Movie Image</b>:</label><br>
+            <input type="image" id="submitImage" src="./images/dul.jfif" alt="Submit Image" width="500"><br><br>
+
+
+            <!-- <input type="hidden" name="formID" value="movie123"> -->
+
+
+            <label for="rating"><b>Movie Rating (0 to 10):</b></label>
+            <input type="range" id="rating" name="rating" min="0" max="10"><br><br>
+
+
+            <label for="themeColor"><b>Pick Screen Theme Color:</b></label>
+            <input type="color" id="themeColor" name="themeColor"><br><br>
+
+
+            <label for="searchActor"><b>Search Actor/Actress:</b></label>
+            <input type="search" id="searchActor" name="searchActor" placeholder="search here"><br><br>
+
+
+            <label for="trailer"><b>Trailer URL:</b></label>
+            <input type="url" id="trailer" name="trailer" value="https://youtu.be/qeVfT2iLiu0?si=2L39e6LsRg4eqg9z">
+            <button onclick="goToTrailer()">Watch Trailer</button><br><br>
+
+
+            <label for="releaseWeek"><b>Movie Release Week:</b></label>
+            <input type="week" id="releaseWeek" name="releaseWeek"><br><br>
+
+        
+            <label for="favMonth"><b>Movie Release Month:</b></label>
+            <input type="month" id="favMonth" name="favMonth"><br><br>
+
+        
+            <label for="showTime"><b>Show Time:</b></label>
+            <input type="time" id="showTime" name="showTime"><br><br>
+
+
+            <table>
+                <tr>
+                    <td width = "2000px"><input type="reset" value="Reset"></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
